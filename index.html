@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Snake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 Game Snake</h1>
+        <canvas id="gameCanvas"></canvas>
+        <div class="controls">
+            <button id="upBtn">↑</button>
+            <button id="downBtn">↓</button>
+            <button id="leftBtn">←</button>
+            <button id="rightBtn">→</button>
+        </div>
+        <div class="score">
+            <p>Score: <span id="scoreValue">0</span></p>
+            <p>Level: <span id="levelValue">1</span></p>
+        </div>
+        <div id="gameOver" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <button id="restartGame">Restart</button>
+        </div>
+        <footer>
+            <img src="snake.gif" alt="Andika's Avatar" class="avatar">
+            <p class="madeBy">Made <span class="blinking">by Andika and AI</span></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
