@@ -1,85 +1,112 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    background-color: #0b0c1f; /* Warna latar belakang gelap */
-    font-family: 'Press Start 2P', cursive; /* Menggunakan font retro */
-    color: #fff; /* Warna teks putih */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #0b0c1f;
+  /* Warna latar belakang gelap */
+  font-family: 'Press Start 2P', cursive;
+  /* Menggunakan font retro */
+  color: #fff;
+  /* Warna teks putih */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 canvas {
-    border: 2px solid #fff; /* Border putih untuk kanvas */
+  border: 2px solid #fff;
+  /* Border putih untuk kanvas */
 }
 
 .controls {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 button {
-    margin: 5px;
-    padding: 10px 15px;
-    font-size: 20px;
-    background-color: #1b1b3a; /* Latar belakang tombol */
-    color: #fff; /* Warna teks tombol */
-    border: none; /* Menghilangkan border tombol */
-    cursor: pointer; /* Menunjukkan kursor tangan saat hover */
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: #1b1b3a;
+  /* Latar belakang tombol */
+  color: #fff;
+  /* Warna teks tombol */
+  border: none;
+  /* Menghilangkan border tombol */
+  cursor: pointer;
+  /* Menunjukkan kursor tangan saat hover */
 }
 
 button:hover {
-    background-color: #3a3a5a; /* Mengubah warna saat hover */
+  background-color: #3a3a5a;
+  /* Mengubah warna saat hover */
 }
 
 .score {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #gameOver {
-    margin-top: 20px;
-    font-size: 24px;
+  margin-top: 20px;
+  font-size: 24px;
 }
 
 footer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .avatar {
-    width: 50px; /* Ukuran gambar avatar */
-    height: 50px; /* Ukuran gambar avatar */
-    border-radius: 50%; /* Membuat gambar avatar berbentuk lingkaran */
-    margin-bottom: 10px; /* Jarak antara gambar dan teks */
+  width: 50px;
+  /* Ukuran gambar avatar */
+  height: 50px;
+  /* Ukuran gambar avatar */
+  border-radius: 50%;
+  /* Membuat gambar avatar berbentuk lingkaran */
+  margin-bottom: 10px;
+  /* Jarak antara gambar dan teks */
 }
 
 .madeBy {
-    font-family: 'Raleway', sans-serif; /* Menggunakan font yang lebih bagus */
-    font-size: 14px; /* Ukuran untuk teks pembuat */
+  font-family: 'Raleway', sans-serif;
+  /* Menggunakan font yang lebih bagus */
+  font-size: 14px;
+  /* Ukuran untuk teks pembuat */
 }
 
 .blinking {
-    animation: blink 1s infinite; /* Animasi berkedip */
-    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(173, 216, 230)); /* Warna merah dan biru muda */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  animation: blink 1s infinite;
+  /* Animasi berkedip */
+  background: linear-gradient(90deg, rgb(255, 0, 0), rgb(173, 216, 230));
+  /* Warna merah dan biru muda */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes blink {
-    0%, 100% {
-        opacity: 1; /* Penuh terlihat */
-    }
-    50% {
-        opacity: 0.5; /* Setengah terlihat */
-    }
+
+  0%,
+  100% {
+    opacity: 1;
+    /* Penuh terlihat */
+  }
+
+  50% {
+    opacity: 0.5;
+    /* Setengah terlihat */
+  }
+}
+
+.highScore {
+  font-size: 18px;
+  margin-top: 10px;
 }
